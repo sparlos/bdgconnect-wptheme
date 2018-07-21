@@ -1,6 +1,6 @@
 <?php
-$fields = CFS()->find_fields( array( 'field_name' => 'footer_page_id' ) );
-$page_id = $fields[0]['options']['default_value'];
+$page = get_page_by_title('Footer');
+$page_id = $page->ID;
 ?>
 
 <div class="footer">

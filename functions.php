@@ -25,3 +25,45 @@ function startwordpress_scripts() {
 
 add_action ('wp_print_styles', 'startwordpress_google_fonts');
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
+
+// create theme pages
+
+function create_post($page_name, $page_slug, $post_status, $page_template, $menu_order) {
+	if (null == get_page_by_title($page_name)) {
+	
+		$page = array(
+		'post_title' => $page_name,
+		'post_content' => '',
+		'post_name' => $page_slug,
+		'post_status' => $post_status,
+		'post_type' => 'page',
+		'post_author' => 1,
+		'page_template' => $page_template,
+		'menu_order' => $menu_order
+		);
+		
+		wp_insert_post($page);
+		
+	}
+}
+
+function create_init_posts() {
+	create_post('Home', 'home', 'publish', 'page-home.php', 1);
+	create_post('About Us', 'about-us', 'publish', 'page-about-us.php', 2);
+	create_post('Footer', 'footer', 'private', 'default', 3);
+
+}
+
+//set index page to be home
+
+function set_home_page() {
+	$homepage = get_page_by_title('Home');
+	
+	if ($homepage) {
+		update_option('page_on_front', $homepage->ID);
+		update_option('show_on_front', 'page');
+	}
+}
+	
+add_action ('after_setup_theme', 'create_init_posts');
+add_action ('after_setup_theme', 'set_home_page');
