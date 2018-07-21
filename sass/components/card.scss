@@ -1,0 +1,12 @@
+.card {
+  min-width: 200px;
+  &-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card-col {
+  margin-bottom: 30px;
+}

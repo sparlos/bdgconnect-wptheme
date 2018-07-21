@@ -1,0 +1,55 @@
+@keyframes navbar-button {
+  0% {
+
+  }
+  50% {
+    -webkit-transform: scaleX(1.3);
+    transform: scaleX(1.3);
+    background-color: rgba($color-highlight,0.5);
+  }
+  100% {
+    -webkit-transform: scaleX(1.3);
+    transform: scaleX(1.3);
+    background-color: rgba($color-highlight,1);
+  }
+}
+
+@keyframes core-button {
+  0% {
+
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: rgba($color-highlight,0.5);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: rgba($color-highlight,1);
+  }
+}
+
+@keyframes navbar-button-text {
+  0% {
+
+  }
+  50% {
+    color: darken($color-white, 30%);;
+  }
+  100% {
+    color: $color-white;
+  }
+}
+
+@keyframes core-button-text {
+  0% {
+
+  }
+  50% {
+    color: $color-black;
+  }
+  100% {
+    color: $color-white;
+  }
+}

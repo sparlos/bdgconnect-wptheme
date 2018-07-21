@@ -1,0 +1,40 @@
+h1,h2,h3,h4,h5,h6 {
+font-family: 'PT Sans', sans-serif;
+color: $color-white;
+}
+
+h2 {
+  color: $color-highlight;
+  font-size: 2.3em;
+}
+
+h3, h5 {
+  color: $color-highlight;
+}
+
+p, a {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+i {
+  font-size: 2.5em;
+}
+
+.text-color {
+  &__highlight {
+    color: $color-highlight;
+  }
+}
+
+.subheading {
+  color: $color-white;
+}
+
+
+.footer {
+  &__text {
+    & a {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+  }
+}

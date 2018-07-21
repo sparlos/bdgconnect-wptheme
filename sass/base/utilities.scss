@@ -1,0 +1,26 @@
+.row-content {
+  margin-top: 60px;
+  padding: 0 50px;
+  @media (min-width: 768px) { padding: 0; }
+  
+  &:nth-child(1) {
+    margin-top: 70px;
+  }
+}
+
+hr.styled {
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba($color-black, 0), rgba($color-black, 0.75), rgba($color-black, 0));
+}
+
+.youtube-video {
+  width: 100%;
+  max-width: 760px;
+}
+
+
+.spaced-header {
+  margin: 20px 0;
+}
