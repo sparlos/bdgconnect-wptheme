@@ -19,7 +19,9 @@
 
         </h1>
         <h3 data-aos="fade-up" data-aos-duration="1000" class="subheading">
-        <?php echo CFS()->get('subheading_text'); ?>
+          
+          <?php echo CFS()->get('subheading_text'); ?>
+          
         </h3>
     </div>
     </div>
