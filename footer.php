@@ -6,11 +6,13 @@ $page_id = $page->ID;
 <div class="footer">
   <div class="footer__item">
     <span class="footer__text">
-      <a href=""><?php echo CFS()->get('footer_address', $page_id); ?></a>
+      <?php $address = CFS()->get('footer_address', $page_id); ?>
+      <a target="_blank" href='https://maps.google.com/?q=<?php echo urlencode($address); ?>'><?php echo $address; ?></a>
     </span>
   </div>
   <div class="footer__item">
     <span>
+      
       <?php $first_icon = CFS()->get('first_icon', $page_id);
       reset($first_icon);
       $second_icon = CFS()->get('second_icon', $page_id);

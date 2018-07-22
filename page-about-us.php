@@ -72,5 +72,14 @@
    .nav-link-about:hover {
    color: #e02b20;
    }
+   .hero {
+    background-image: 
+      linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0.75)
+      ),
+      url("<?php echo CFS()->get('background_image'); ?>");
+    }
 </style>
 <?php get_footer(); ?>
