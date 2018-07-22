@@ -1,0 +1,27 @@
+.expandable-cards .card {
+  border: none;
+  & .card-header {
+    background-color: $color-white;
+    border: none;
+    & .btn {
+      padding-left: 0;
+      text-decoration: none;
+      white-space: normal;
+      color: lighten($color-highlight, 20%);
+      transition: 0.2s;
+      font-size: 1.5em;
+      &__active {
+        color: $color-highlight;
+        text-decoration: none;
+      }
+      & i {
+        font-size: 0.8em;
+      }
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: $color-highlight;
+      }
+    }
+  }
+}

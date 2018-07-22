@@ -26,11 +26,11 @@
 		<li><hr class="hr-navbar"></li>
 		<li><a class="nav-link nav-link-mobile nav-link-about" href="/about-us">About Us</a></li>
 		<li><hr class="hr-navbar"></li>
-		<li><a class="nav-link nav-link-mobile nav-link-test" href="">Testimonials</a></li>
+		<li><a class="nav-link nav-link-mobile nav-link-test" href="/testimonials">Testimonials</a></li>
 		<li><hr class="hr-navbar"></li>
-		<li><a class="nav-link nav-link-mobile nav-link-faq" href="">FAQ</a></li>
+		<li><a class="nav-link nav-link-mobile nav-link-faq" href="/faq">FAQ</a></li>
 		<li><hr class="hr-navbar"></li>
-		<li><a class="nav-link nav-link-mobile nav-link-video" href="">Video Submission</a></li>
+		<li><a class="nav-link nav-link-mobile nav-link-video" href="/video-submission">Video Submission</a></li>
 	</ul>
 	</div>
 
@@ -51,13 +51,13 @@
 		<a href="/about-us" class="nav-link nav-link-about">About Us</a>
 		</li>
 			<li class="nav-item">
-		<a href="#" class="nav-link nav-link-test">Testimonials</a>
+		<a href="/testimonials" class="nav-link nav-link-test">Testimonials</a>
 		</li>
 		<li class="nav-item">
-		<a href="#" class="nav-link nav-link-faq">FAQ</a>
+		<a href="/faq" class="nav-link nav-link-faq">FAQ</a>
 		</li>
 		<li class="nav-item">
-		<a href="#" class="nav-link nav-link-video">Video Submission</a>
+		<a href="/video-submission" class="nav-link nav-link-video">Video Submission</a>
 		</li>
 	</div>
 	</div>

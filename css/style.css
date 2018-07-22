@@ -113,6 +113,10 @@ hr.styled {
   margin: 20px 0;
 }
 
+.spaced-header-big {
+  margin: 40px 0 0;
+}
+
 .core-button {
   margin: 20px 0;
   position: relative;
@@ -147,6 +151,34 @@ hr.styled {
   animation-name: core-button;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+
+.expandable-cards .card {
+  border: none;
+}
+.expandable-cards .card .card-header {
+  background-color: #fff;
+  border: none;
+}
+.expandable-cards .card .card-header .btn {
+  padding-left: 0;
+  text-decoration: none;
+  white-space: normal;
+  color: #ec807a;
+  transition: 0.2s;
+  font-size: 1.5em;
+}
+.expandable-cards .card .card-header .btn__active {
+  color: #e02b20;
+  text-decoration: none;
+}
+.expandable-cards .card .card-header .btn i {
+  font-size: 0.8em;
+}
+.expandable-cards .card .card-header .btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #e02b20;
 }
 
 .card {

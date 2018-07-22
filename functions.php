@@ -50,7 +50,10 @@ function create_post($page_name, $page_slug, $post_status, $page_template, $menu
 function create_init_posts() {
 	create_post('Home', 'home', 'publish', 'page-home.php', 1);
 	create_post('About Us', 'about-us', 'publish', 'page-about-us.php', 2);
-	create_post('Footer', 'footer', 'private', 'default', 3);
+	create_post('Testimonials', 'testimonials', 'publish', 'page-testimonials.php', 3);
+	create_post('FAQ', 'faq', 'publish', 'page-faq.php', 4);
+	create_post('Video Submission', 'video-submission', 'publish', 'page-video-submission.php', 5);
+	create_post('Footer', 'footer', 'private', 'default', 6);
 
 }
 
