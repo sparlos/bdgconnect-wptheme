@@ -69,7 +69,7 @@
         <?php echo CFS()->get('cta_heading'); ?>
       </h3>
       <button class="core-button">
-       <?php echo CFS()->get('cta_button_text'); ?>
+       <a href="/video-submission"><?php echo CFS()->get('cta_button_text'); ?></a>
       </button>
     </div>
   </div>

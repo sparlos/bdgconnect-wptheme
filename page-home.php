@@ -55,7 +55,7 @@
       <h3>
         <?php echo CFS()->get('cta_text'); ?>
       </h3>
-      <button class="core-button"><?php echo CFS()->get('cta_button'); ?></button>
+      <a href="/video-submission"><button class="core-button"><?php echo CFS()->get('cta_button'); ?></button></a>
     </div>
     <div class="col-sm-12">
       <hr class="styled">

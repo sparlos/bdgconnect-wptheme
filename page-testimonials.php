@@ -79,7 +79,7 @@
    <div class="row spaced-header-big">
       <div class="col-md-8 offset-md-2 text-center">
          <h3><?php echo CFS()->get('cta_heading'); ?></h3>
-         <button class="core-button"><?php echo CFS()->get('cta_button_text'); ?></button>
+         <a href="/video-submission"><button class="core-button"><?php echo CFS()->get('cta_button_text'); ?></button></a>
       </div>
    </div>
 </div>
