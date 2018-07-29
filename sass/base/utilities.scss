@@ -28,3 +28,13 @@ hr.styled {
 .spaced-header-big {
   margin: 40px 0 0;
 }
+
+@media (max-width: 767px) {
+  .heading-top-space {
+    margin-top: 20px;
+  }
+  .small-heading-mobile {
+    font-size: 1em;
+  }
+}
+

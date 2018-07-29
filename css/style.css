@@ -122,6 +122,15 @@ hr.styled {
   margin: 40px 0 0;
 }
 
+@media (max-width: 767px) {
+  .heading-top-space {
+    margin-top: 20px;
+  }
+
+  .small-heading-mobile {
+    font-size: 1em;
+  }
+}
 .core-button {
   margin: 20px 0;
   position: relative;
@@ -208,16 +217,16 @@ hr.styled {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
   color: #b3b3b3;
 }
 .footer__item {
   flex: 1 100%;
   padding: 30px 0;
 }
-@media (min-width: 992px) {
-  .footer__item {
-    flex: 1 33%;
-  }
+.footer__item:nth-child(1) {
+  margin: 0 5px;
+  white-space: pre-line;
 }
 .footer__item a {
   color: #b3b3b3;
@@ -243,6 +252,14 @@ hr.styled {
   text-decoration: none;
 }
 
+@media (min-width: 992px) {
+  .footer__item {
+    flex: 1 33%;
+  }
+  .footer__item:nth-child(1) {
+    white-space: initial;
+  }
+}
 .navbar-toggler {
   color: #b3b3b3;
   position: fixed;
@@ -260,7 +277,7 @@ hr.styled {
 
 .navbar-mobile {
   background-color: rgba(0, 0, 0, 0.85);
-  height: 100vh;
+  height: 50vh;
   width: 0;
   position: fixed;
   z-index: 20;
@@ -271,7 +288,7 @@ hr.styled {
 }
 .navbar-mobile .fa-times {
   box-sizing: border-box;
-  margin: 30px 15px;
+  margin: 15px 0;
   position: absolute;
   z-index: 100;
   top: 0;
@@ -279,6 +296,7 @@ hr.styled {
   font-size: 36px;
   margin-left: 50px;
   transition: 0.3s;
+  padding: 15px;
   color: #b3b3b3;
 }
 .navbar-mobile .fa-times:hover {
@@ -346,7 +364,7 @@ hr.styled {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  background-attachment: fixed;
+  background-attachment: initial;
 }
 .hero__text {
   padding-top: 20vh;
@@ -354,7 +372,11 @@ hr.styled {
 .hero__text h1 {
   font-size: 3em;
 }
-@media (min-width: 576px) {
+
+@media (min-width: 991px) {
+  .hero {
+    background-attachment: fixed;
+  }
   .hero__text h1 {
     font-size: 4em;
   }

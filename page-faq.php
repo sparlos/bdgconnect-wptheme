@@ -37,10 +37,10 @@
         ?>
   <div class="card">
     <div class="card-header" id="heading<?php echo $count?>">
-      <h5 class="mb-0">
+      <h5 class="mb-0 small-heading-mobile">
         <button class="btn btn-link <?php echo ($count == 0) ? 'btn__active' : '' ?>" data-toggle="collapse" data-target="#collapse<?php echo $count?>" aria-expanded="true" aria-controls="collapse<?php echo $count?>">
             <?php echo $question['question']; ?>
-          <i class="fas fa-minus"></i> 
+            <i class="fas fa-<?php echo ($count == 0) ? 'minus' : 'plus' ?>"></i> 
         </button>
       </h5>
     </div>
@@ -68,9 +68,11 @@
       <h3>
         <?php echo CFS()->get('cta_heading'); ?>
       </h3>
-      <button class="core-button">
-       <a href="/video-submission"><?php echo CFS()->get('cta_button_text'); ?></a>
-      </button>
+      <a href="/video-submission">
+        <button class="core-button">
+          <?php echo CFS()->get('cta_button_text'); ?>
+        </button>
+      </a>
     </div>
   </div>
   

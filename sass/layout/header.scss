@@ -15,7 +15,7 @@
 
 .navbar-mobile {
     background-color: rgba($color-black, 0.85);
-    height: 100vh;
+    height: 50vh;
     width: 0;
     position: fixed;
     z-index: 20;
@@ -26,7 +26,7 @@
   
   & .fa-times {
     box-sizing: border-box;
-    margin: 30px 15px;
+    margin: 15px 0;
     position: absolute;
     z-index: 100;
     top: 0;
@@ -34,6 +34,7 @@
     font-size: 36px;
     margin-left: 50px;
     transition: 0.3s;
+    padding: 15px;
     color: darken($color-white, 30%);
     &:hover {
       color: $color-white;
@@ -113,13 +114,22 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-attachment: fixed;
+    background-attachment: initial;
   &__text {
     padding-top: 20vh;
     & h1 {
       font-size: 3em;
-      @media (min-width: 576px) { font-size: 4em } 
     }
   }
-
 }
+
+@media (min-width: 991px) { 
+  .hero {
+    &__text {
+      & h1 {
+        font-size: 4em;
+      }
+    }
+    background-attachment: fixed;
+  }
+} 

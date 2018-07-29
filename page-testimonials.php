@@ -30,7 +30,7 @@
          </div>
       </div>
       <div class="col-md-4">
-         <h3>
+         <h3 class="heading-top-space">
             <?php echo CFS()->get('second_video_heading'); ?>
          </h3>
          <div class="embed-responsive embed-responsive-16by9">
@@ -42,7 +42,7 @@
       <hr class="styled">
    </div>
    <div class="row">
-      <div class="col-8 offset-2 text-center">
+      <div class="col-10 offset-1 col-md-8 offset-md-2 text-center">
          <div id="accordion">
             <!-- LOOP STARTS HERE -->
 
@@ -53,10 +53,10 @@
 
             <div class="card">
                <div class="card-header" id="heading<?php echo $count?>">
-                  <h5 class="mb-0">
+                  <h5 class="mb-0 small-heading-mobile">
                      <button class="btn btn-link <?php echo ($count == 0) ? 'btn__active' : '' ?>" data-toggle="collapse" data-target="#collapse<?php echo $count?>" aria-expanded="true" aria-controls="collapse<?php echo $count?>">
                         <?php echo $testimonial['heading']; ?>
-                     <i class="fas fa-minus"></i> 
+                     <i class="fas fa-<?php echo ($count == 0) ? 'minus' : 'plus' ?>"></i> 
                      </button>
                   </h5>
                </div>
