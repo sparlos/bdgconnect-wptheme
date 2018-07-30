@@ -40,6 +40,7 @@
 }
 html, body {
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 button {
@@ -277,7 +278,7 @@ hr.styled {
 
 .navbar-mobile {
   background-color: rgba(0, 0, 0, 0.85);
-  height: 50vh;
+  height: 100vh;
   width: 0;
   position: fixed;
   z-index: 20;

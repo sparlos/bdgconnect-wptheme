@@ -28,10 +28,5 @@ AOS.init();
         $(this).find(".fas").removeClass('fa-plus');
       }
     });
-
-    //Accomodate navbar mobile height for browsers w/ address bars
-    var windowHeight = window.innerHeight + 'px';
-    $('body').css('height', windowHeight);
-    $('.navbar-mobile').css('height', windowHeight);
     
 })( jQuery );
